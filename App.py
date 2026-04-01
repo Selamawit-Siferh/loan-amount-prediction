@@ -185,9 +185,9 @@ if predict_button:
 
             col1, col2, col3 = st.columns([1, 2, 1])
             with col2:
-                st.metric("Predicted Loan Amount", f"ETB {prediction:,.2f}")
+                st.metric("Predicted Loan Amount", f" {prediction:,.2f}")
                 st.progress(min(prediction / 500000, 1.0))
-                st.info(f"Based on the provided information, the recommended loan amount is ETB {prediction:,.2f}")
+                st.info(f"Based on the provided information, the recommended loan amount is  {prediction:,.2f}")
 
         except Exception as e:
             st.error(f"Error during prediction: {e}")
